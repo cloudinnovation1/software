@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cloud Innovation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {,
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left:10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Cloud Innovation</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Project</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Our Features</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+			            <h1 class="mb-4 mt-3">Cloud<br>Innovation</h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Software & Web Development ',
+						'App Development  ',
+						'UI & UX Design  ',
+						'AI Development ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Superb tech solution</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="" class="btn btn-primary py-3 px-4">Contact Us</a> 
+							<a href="https://github.com/cloudinnovation1" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+<!--What we do section start-->
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">What We Do</h1>
+            <h2 class="mb-4">What We Do</h2>
+            <div class="underline"></div>
+            <p>We are professional programmer based software company. We have expert designer, developer & programmers. We are working professionally with six years of experience. Worked with numbers of big companies.</p>
+          </div>
+        </div>
+		
+		<div class="row">
+				<div class="col-md-4">
+					<div class="resume-wrap ftco-animate">
+						<div class="about-img">
+						 <img src="images/coding.png" class="img-fluid rounded b-shadow-a" alt="">
+								</div>
+						<h2>Development</h2>
+						<!--<span class="position">Merkle</span>-->
+						<p class="mt-4">We develop apps & games for android and ios.
+               Management software for companies. Website & web application.
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-4">
+					<div class="resume-wrap ftco-animate">
+						<div class="about-img">
+						 <img src="images/graphic-software.png" class="img-fluid rounded b-shadow-a" alt="">
+								</div>
+						<h2>Design</h2>
+						<!--<span class="position">Merkle</span>-->
+						<p class="mt-4">We design logo, banner, leflet for companies. Application prototype, UI & UX. Web page design & prototype.
+						</p>
+					</div>
+
+				</div>
+				<div class="col-md-4">
+					<div class="resume-wrap ftco-animate">
+						<div class="about-img">
+						 <img src="images/growth.png" class="img-fluid rounded b-shadow-a" alt="">
+								</div>
+						<h2>Marketing</h2>
+						<!--<span class="position">iQuanti</span>-->
+						<p class="mt-4">We boost facebook post & page. Youtube channel & video contents. We promote website, apps & games.
+							
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Leatest Project</h1>
+			<div class="underline"></div>
+			<p>In 6-7 year,we have worked in lots of projects with different companies.Most of them are small companies.These are the successfull projects among them.</p>
+		</div>
+
+		<br>
+		<br>
+
+			<div class="row">
+    			<div class="col-md-4">
+    				<div class="resume-wrap ftco-animate">
+    					<a href="https://github.com/cloudinnovation1/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/e-commerce.png');">
+				</a>
+    					<span class="date">E-Commerce Site</span>
+    					<p class="mt-4">This is My First official Laravel works to live project. I make this project in some part of frontend and backend & complete this project in late 2023.This software has features like stock in,stock out,add product,add brand,selling product,gift customer,discount price, print invoice,save record,revenue report,customer survey.It provides the tools needed to build and manage an online store,handle transactions,and streamline operations.These platforms offer various features like website builders,shopping carts,payment processing and inventory management etc.
+    					</p>
+    				
+    			</div>
+    		</div>
+
+    			<div class="col-md-4">
+    				<div class="resume-wrap ftco-animate">
+    					
+    					<a href="https://github.com/cloudinnovation1/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/crime.png');">
+    					</a>
+    					
+    					<span class="date">Crime management system</span>
+
+    					<p class="mt-4">Crime management system software is typically based on a combination of technologies and methodologies,including relational databases, web-based applications,and software development life cycle models.These systems aim to streamline the management of crime-related data, improve communication between law enforcement agencies,and enhance public safety.
+    					</p>
+    				
+    				</div>
+				</div>
+				 <div class="col-md-4">
+    				<div class="resume-wrap ftco-animate">
+    					<a href="https://github.com/cloudinnovation1/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/hospital.png');">
+				</a>
+    					
+    					<span class="date">Hospital Management System</span>
+    						
+    					<p class="mt-4">Hospital Management System (HMS) software is based on a combination of core modules and supporting functionalities designed to streamline hospital operations.These modules, including patient management, electronic health records,appointment scheduling,billing,and inventory management,are integrated to provide a comprehensive digital platform for healthcare facilities.</p>
+    				</div>
+				 </div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://raonak1.github.io/raonak_portfolio/" class="btn btn-primary py-3 px-5">Portfolio</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+ <!--What we do section end-->
+
+   
+<!--Project section start-->
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Our Features</h1>
+            <h2 class="mb-4">Our Features</h2>
+            <div class="underline"></div>
+            <p>We are offering too many features like apps development, games development, software development, website development, Graphics Designing, boosting pages etc. We have experienced developers and programmers working in these sector for many years.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="">Android Apps</a></h3>
+                <p>We are working small business and organization apps, delivary and ride sharing apps, AI based recognizer tools apps etc.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="">Mobile Games</a></h3>
+                <p>If you have a good any game content idea, we can develop your game. We develop casual, racing, pazzle, board game etc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="">Management Software</a></h3>
+                <p>Most of our software are management system based. Inventory, stock, account, store or shop management etc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="">Bussiness Website</a></h3>
+				  <p>We develop any kind of website as your requirement. Small company, organization, institude static or dynamic website.</p>
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+           <a href="" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+              </a>
+          <div class="text mt-3 float-right d-block">
+
+             <h3 class="heading"><a href="https://github.com/cloudinnovation1">Graphics Design</a></h3>
+            <p>We have professional photoshop, illustrator and adobe xd expert. We design prototype, logo, banner, leaflet etc.</p>
+              </div>
+            </div>
+          </div>
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/cloudinnovation1" class="block-20 zoom-effect" style="background-image: url('images/proj_6.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/cloudinnovation1">Page Boosting</a></h3>
+				  <p>Promoting a start up bussiness is comes easily nowadays by boosting content.We boost facebook page, post, video etc.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+  <!--Project section end-->
+
+
+ <!-- block 18 section start-->
+
+  <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1000">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/cloudinnovation1" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+	<!-- block 18 section end-->
+
+
+  <!--Contarct start-->
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <div class="underline"></div>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p><a href="place">Dhaka, Bangladesh</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">0178751795</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">info.cloudinnovation@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Google Map</h3>
+	            <p><a href="https://www.google.com/maps/place/Dhaka/data=!4m2!3m1!1s0x3755b8b087026b81:0x8fa563bbdd5904c2?sa=X&ved=1t:242&ictx=111">Map Link</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://web.whats.com/" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/raonak-islam/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://twitter.com"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://twitter.com"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+  <!--Contarct end-->
+
+ 
+	<!-- Start footer section-->
+
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<!--<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+<!-- End footer section-->
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
